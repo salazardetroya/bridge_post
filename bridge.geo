@@ -1,4 +1,4 @@
-size = 0.03;
+size = 0.015;
 //+
 Point(1) = {0, 0, 0, size};
 //+
@@ -8,13 +8,13 @@ Point(3) = {0.5, 1.0, 0, size};
 //+
 Point(4) = {0, 1.0, 0, size};
 //+
-Point(5) = {0, 0, 0.9, size};
+Point(5) = {0, 0, 0.98, size};
 //+
-Point(6) = {0.5, 0, 0.9, size};
+Point(6) = {0.5, 0, 0.98, size};
 //+
-Point(7) = {0.5, 1, 0.9, size};
+Point(7) = {0.5, 1, 0.98, size};
 //+
-Point(8) = {0, 1, 0.9, size};
+Point(8) = {0, 1, 0.98, size};
 //+
 Point(9) = {0, 0, 1, size};
 //+

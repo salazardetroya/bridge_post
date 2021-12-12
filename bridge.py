@@ -19,11 +19,6 @@ from penalization import ramp
 from solver_parameters import gamg_parameters, hypre_params
 
 
-def print(x):
-    from firedrake.petsc import PETSc
-    PETSc.Sys.Print(x)
-
-
 def compliance_bridge():
     DECK = 0
     DOMAIN = 1
@@ -77,7 +72,6 @@ def compliance_bridge():
 
     H1 = fd.VectorElement("CG", mesh.ufl_cell(), 1)
     W = fd.FunctionSpace(mesh, H1)
-    print(f"DOFS: {W.dim()}")
 
     x, y, z = fd.SpatialCoordinate(mesh)
     modes = [fd.Function(W) for _ in range(6)]
